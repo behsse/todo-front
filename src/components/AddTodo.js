@@ -13,7 +13,7 @@ export default function AddTodo({ addTodo }) {
   async function addTodoToDatabase() {
     try {
       setLoading(true);
-      const response = await fetch("https://todotestapp.herokuapp.com/addTodo", {
+      const response = await fetch("https://todo-api-214z.onrender.com/addTodo", {
         method: "POST",
         body: JSON.stringify({
           content: value,

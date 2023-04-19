@@ -5,7 +5,7 @@ export default function EditTodo({ todo, updateTodo }) {
 
   async function modifyTodo(newTodo) {
     try {
-      const response = await fetch("https://todotestapp.herokuapp.com/modifyTodo", {
+      const response = await fetch("https://todo-api-214z.onrender.com/modifyTodo", {
         method: "POST",
         body: JSON.stringify(newTodo),
         headers: {
